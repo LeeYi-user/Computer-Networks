@@ -1,0 +1,47 @@
+題目1:
+192.168.10.90/26所在的網路位址是多少
+
+答案1:
+192.168.10.64
+
+
+題目2:
+192.168.1.0/24 —-> 切割成4個子網路,問子網路位址,子網路廣播位址,ip range, mask
+
+答案2:
+https://t.me/nqucsie2022network/1078
+
+
+題目3 (2的衍伸):
+mask ip range 還有broadcast addr
+
+答案3:
+https://t.me/nqucsie2022network/1089
+
+
+題目4:
+140.10.100.1/18 如果要傳送資料給140.10.50.1/18是否需要透過路由器轉送,還是直接 傳送....那如果要送給140.10.150.1/18呢
+
+答案4:
+都需要router (https://t.me/nqucsie2022network/1158)
+
+
+題目5:
+140.10.0.0/16 —>切割成8個子網路,問每個子網路位址,廣播位址,ip range (有幾個可以給host ip?)...mask ? (https://t.me/nqucsie2022network/1165)
+
+答案5:
+https://t.me/nqucsie2022network/1169
+
+
+題目6:
+某子網路下只有 192.168.0~3.X 這種位址,問其子網路位址,子網路廣播位址,ip range, mask
+
+答案6:
+https://t.me/nqucsie2022network/1172
+
+
+題目7:
+140.10.0.0/18和140.10.64.0/18進行合併
+
+答案7:
+https://t.me/nqucsie2022network/1175
