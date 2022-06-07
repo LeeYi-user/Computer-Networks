@@ -1,0 +1,43 @@
+模擬器:
+https://csie.nqu.edu.tw/smallko/setl-rl.htm
+
+人工智慧:
+https://www.bilibili.com/video/BV1yv411i7xd?spm_id_from=333.337.search-card.all.click
+
+Assume:
+1. Each Node always has data to transmit
+2. Data is fixed
+
+wait DFFS = 50 / M = 50 * 10^(-6) sec = 50 us
+wait for random time
+
+IEEE: Layer 1, 2
+IAB - IETF - RFC: Layer 3
+
+CS: Carrier Sense (載波感測)
+MA: Multiple Access (多重存取)
+CD: Collision Detection (碰撞偵測)
+
+TCP: segment
+IP: packet
+MAC: frame
+UDP: datagram
+
+
+Ethernet 2.0:
+       8              6             6          2     46~1500   4
+   Preamble    | Destination |   Source    | Etype  | Data  | FCS
+               | MAC Address | MAC Address |        |       |
+
+IEEE 802.3:
+    7       1         6             6          2     46~1500   4
+Preamble | SFD | Destination |    Source   | Etype/ | Data/ | FCS
+               | MAC Address | MAC Address | Length | 802.2 |
+
+802.2: DSAP、SSAP、CRTL
+0800: IP
+0806: ARP
+
+
+IP: end to end
+MAC: one hop
