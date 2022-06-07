@@ -1,0 +1,52 @@
+高級資工證照:
+CCNA、CCNP、CCIE
+
+利用DNS擋廣告:
+https://www.ptt.cc/bbs/MobileComm/M.1546461998.A.A14.html
+
+集縮比愈大，分享的程度愈高，消費者塞網的機會就會愈高，平均分攤到的通訊量就會愈低
+若集縮比為4：1，則當4個用戶同時使用網路時，上下行可維持的速率可能降為原訂上下行最高速率的1／4
+
+白帽駭客以「改善」為目標，破解某個程式做出（往往是好的）修改，而增強（或改變）該程式之用途。
+黑帽駭客以「利慾」為目標，透過破解、入侵去獲取不法利益，或者發洩負面情緒。
+灰帽駭客以「昭告」為目標，透過破解、入侵去炫耀自己擁有高超的技術，或者宣揚某種理念。
+
+PT = penetration test (滲透測試)
+STP = spanning tree protocol (生成樹協定)
+FT = fault tolerance (故障容許度)
+HA = high availability (高可用)
+
+Ethernet = IEEE 802.3 = CSMA/CD
+WiFi = IEEE 802.11 = CSMA/CA
+CSMA = carrier sense multiple access
+CD = collision detection
+CA = collision avoidance
+
+BEB是一種用來防止資料碰撞的演算法，全名為"binary exponential backoff"
+該演算法會自動設定每台電腦送出資料前所需要的等待時間
+一開始的等待時間可能是 0~1 (2^1)
+如果節點太多則會變成 0~3 (2^2)
+以此類推直到變成 0~1023 (2^10)
+如果還是會碰撞則直接放棄
+
+而在無線網路上，資料傳輸前將需經歷以下步驟:
+1. channel is clear
+2. wait for DIFS
+3. CCA (clear channel accessment)
+4. channel is clear
+5. BEB
+
+
+不同種類的BEB運作方式:
+
+傳統的 (每fail一次就往右進一階, 若success則回到最初階):
+32   64   128   256   512   1024
+
+EIED (每fail一次就往右進一階, 若success則回到前一階):
+32   64   128   256   512   1024
+
+LILD (每fail一次就往右進一階, 若success則回到前一階):
+32   64   96   ....   512   1024
+
+EIED = exponential increase exponential decrease
+LILD = linear increase linear decrease
