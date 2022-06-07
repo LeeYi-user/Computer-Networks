@@ -1,0 +1,34 @@
+期末用口頭報告約5分鐘當作期末成績
+(you need to prepare around 5 min oral presentation as the final exam)
+
+6/7 (學號尾數是單數)
+6/14 (學號尾數是偶數)
+
+802.11標頭長度不固定
+
+802.11 Frame Types and Formats:
+https://howiwifi.com/2020/07/13/802-11-frame-types-and-formats/
+
+PoW = 工作量證明機制
+PoS = 權益證明共識機制
+
+SRE = site reliability engineer
+
+
+Linux指令:
+[user@localhost ~]$ ~ ~+ ~-
+
+~  : 帳戶的 home 目錄
+~+ : 當前的工作目錄
+~- : 上次的工作目錄
+
+
+把IP位址與網路遮罩進行運算,得到的結果就是此IP所在的網路位址
+
+192.168.10.90/26 —->所在的網路位址是192.168.10.64
+
+網路遮罩可以用來判斷來源主機和目的主機是否在同一個區域網路,
+如果在同一個區域網路,則來源主機可以直接傳送給目的主機,
+若是不在相同的網路,則需要透過路由器轉送
+
+192.168.1.0/24 —-> 切割成4個子網路,問子網路位址,子網路廣播位址,ip range, mask
