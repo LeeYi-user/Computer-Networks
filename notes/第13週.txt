@@ -1,0 +1,51 @@
+TCP/UDP 埠列表:
+https://zh.wikipedia.org/zh-tw/TCP/UDP%E7%AB%AF%E5%8F%A3%E5%88%97%E8%A1%A8
+
+乙太網路的訊框大小是64~1518
+MTU最大是1500，MSS最大是1460
+
+廣播位址(Broadcast Address)只能用在目的地
+不能用在來源，且只能存在於區域網路內
+
+要完成一個ping至少要有四個封包:
+ARP request (broadcast) > ARP reply (unicast) > ping request > ping reply
+
+ARP: IP -> MAC
+RARP: MAC -> IP
+
+早期無加密的通訊協定:
+Telnet、FTP、Email
+
+碰撞網域 = 傳輸封包產生碰撞的區域
+廣播網域 = 廣播訊息可播發到的區域
+QoS = quality of service
+
+
+Super Frame:
+
+    B                       B
+... | 免競爭週期 | 競爭週期 | ...
+           |           |
+           V           V
+        CF, PCF     CP, DCF
+
+B = beacon
+CF = contention free
+PCF = point coordination function
+CP = contention period
+DCF = distributed coordination function (CSMA/CA)
+
+
+Ack = Acknowledgement
+RTS = request to send
+
+IFS = interframe space
+SIFS = short IFS
+PIFS = PCF IFS
+DIFS = DCF IFS (避開別人正在傳送的時間)
+EIFS = extended IFS
+
+間隔時間(不同通訊協定下的間隔時間各不相同):
+SIFS < PIFS < DIFS < EIFS
+
+CTS = clear to send
