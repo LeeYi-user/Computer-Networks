@@ -1,0 +1,48 @@
+路由器建立路徑的方式有兩種:
+Static: 固定一條路，無維護成本
+Dynamic: 會自動切換線路，有維護成本
+
+基地台可以有兩種模式:
+Router Mode (Layer 3) - 主要用於連線
+Bridge Mode (Layer 2) - 主要用於分享
+
+FCS = Frame checksum
+
+Message = 訊息
+Data = 資料
+Segment = 片段
+Packet = 封包
+Frame = 訊框
+Signal = 訊號
+
+checksum = 檢查和
+
+
+Frame:
+
+            MTU
+             ^
+      64 ~ 1518 bytes
+|--------------------------|
+  ethernet | payload | FCS
+   6+6+2     48~1500    4
+
+MTU = maximum transmission unit
+
+
+Packet:
+
+                           MSS
+                            ^
+             20   20    1500-40
+           | IP | TCP | payload |
+           ^                    ^
+           |   fragmentation    |
+           |                    |
+|-------------------------------------------|
+  ethernet |      payload       |    FCS
+   6+6+2          48~1500    
+
+MSS = maximum segment size
+fragmentation = 分割
+
