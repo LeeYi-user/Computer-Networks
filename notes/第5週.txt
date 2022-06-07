@@ -1,0 +1,38 @@
+end to end:
+
+ default router
+        ^
+        |
+        |
+  O-----O-----O-----O-----O
+  |        |              |
+  |        |              |
+  V        |              V
+Source     V             Dest
+        one hop
+
+
+server farm:
+
+                   -----> RIP1 (www server) (80)
+                   |
+Client     LB      |
+  O -----> 口 ----------> RIP2
+           VIP     |
+                   |
+                   -----> RIP3
+
+LB = load balancer
+VIP = Virtual IP
+RIP = Real IP
+
+
+在傳輸訊號時使用不同的相位可以避免訊號之間互相干擾
+若搭配QAM則可進一步提高頻帶利用率
+1024 QAM = 10 bits
+
+把類比訊號放到載波上:
+AM、FM、PM
+
+把數位訊號放到載波上:
+ASK、FSK、PSK
