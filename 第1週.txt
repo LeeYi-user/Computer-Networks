@@ -1,0 +1,35 @@
+可以使用WinSCP軟體來進行FTP的連接
+在瀏覽器中輸入下方網址將自動啟用軟體
+ftp://test1234:test1234@csie.nqu.edu.tw
+
+client: browser   server: apache server, IIS server,....
+peer to peer model (p2p) = 點對點，對等網路
+網際網路是採用TCP/IP協定組
+協定簡單的說就是一種標準
+
+DNS = Domain Name Service
+傳輸時採用UDP協定，及53號埠
+主要工作就是把Domain Name轉換成IP
+這種轉換被稱為正向轉換，反之則為反向轉換
+
+在網路上進行通訊會用到多種不同的位址:
+1.實體位置 (physical address)
+2.邏輯位址 (logical address)
+3.埠號 (port number)
+4.virtual host
+
+MAC address = 網卡位址
+使用ipconfig/all即可查看
+總共具有6 bytes (48 bits)
+其格式為xx-xx-xx--xx—xx—xx (xx-00:FFF)
+
+192.168開頭的IP是屬於私有IP(可重複)
+反之則為公有IP(不可重複)
+
+手機的網際網路和家用的電話網路是不同的
+只能使用gateway來把它們串連
+例如SkypeOut服務
+
+socket是一種連接機制，用來處理行程對行程間的通訊
+src IP、src port、dst IP、dst port
+4 tuple -> socket
