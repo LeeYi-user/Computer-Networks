@@ -1,0 +1,37 @@
+客戶端向伺服器端請求資料時，會經過Proxy(代理伺服器)。
+如果在該代理伺服器下已經含有該資料的Cache，那其數據就會直接回傳，以便降低延遲。
+
+CDN = content delivery network
+AP = Access Point
+MS = Mobile Station
+
+IEEE : Layer 1, 2
+IAB - IETF - RFC : Layer 3 (routing、addressing)
+    - IRTF
+
+IEEE = I triple E
+IEEE 802.3  = ethernet (10 ~ 1000 Mbps) (CSMA/CD)
+IEEE 802.11 = wifi (CSMA/CA)
+
+802.11 ax = wifi 6 
+802.11 ac = wifi 5 (Gbps)
+802.11 n  = wifi 4 (600 Mbps) (2.4 ~ 5 GHz)
+--------------------------------------------- 向下相容
+802.11 g (2.4 GHz) (54 Mbps)
+802.11 a (5 Ghz)   (54 Mbps)
+802.11 b (2.4 GHz) (1, 2, 5.5, 11 Mbps)
+
+IEEE 802.15.1 = Bluetooth
+IEEE 802.15.4 = ZigBee
+
+1G (類比訊號)
+2G (GSM) 2.5G (GPRS)
+3G (CDMA2000, WCDMA, SCDMA) (384 Kbps)
+4G (1 Gbps) (LTE_A) (LTE > WiMAX)
+5G (Enhanced Mobile Broadbane) (ultra reliable and low latency) (Massive Machine Type Communication)
+
+個人網路 (PAN; Personal Area Network) (WPA)
+體域網路 (BAN; Body Area Network)
+區域網路 (LAN; Local Area Network)
+都會網路 (MAN; Metropolitan Area Network)
+廣域網路 (WAN; Wide Area Network)
