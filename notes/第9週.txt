@@ -1,0 +1,45 @@
+ethernet is based on contention-based.
+
+multipath ( fault tolerance  and load balance)
+ethernet channel
+1000Mbps
+
+https://tw511.com/a/01/9626.html
+
+spanning tree protocol (STP)
+broadcast storm
+
+樹狀架構是典型的乙太網路架構
+該架構下的每一個節點間都只有一條路徑
+
+乙太網路沿革:
+1995年時, 訂定了100BaseT的標準規格IEEE802.3u
+
+100 = 100 Mbps
+base = baseband (基頻)
+T = twisted pair
+broadband = 寬頻
+
+
+wifi 4 = 802.11n (600 Mbps)
+wifi 5 = 802.11ac
+wifi 6 = 802.11ax
+
+WPAN = 無線個人網路
+WLAN = 無線區域網路
+WMAN = 無線都會網路
+WWAN = 無線廣域網路
+
+https://codertw.com/ios/61074/
+
+WEP : 只要封包足夠就能破解
+WPA / WPA2 : 只能用猜密碼的方式來破解
+
+在Ad Hoc模式下
+各節點可以直接對傳, 彼此地位同等
+
+在Infrastructure模式下
+節點與節點間的通訊必須要經過基地台(AP)
+
+Infrastructure + Repeater = 擴大傳送範圍
+Infrastructure + Bridge = 增加傳送對象
