@@ -1,0 +1,55 @@
+OSI模式 (向下是encapsulation、add header/trailer; 向上是decapsulation、remove header/trailer):
+應用層 (Application Layer)
+呈現層 (Presentation Layer) (encoding / decode) (encryption / decryption) (compression / decompression)
+會議層 (Session Layer) (避免資料中斷後要完全重傳)
+傳輸層 (Transport Layer) (out-of-order -> in order)
+網路層 (Network Layer)
+資料連結層 (Data Link Layer) (LLC、MAC)
+實體層 (Physical Layer)
+
+TCP/IP 協定組:
+應用層(Application Layer)
+傳輸層(Transport Layer)
+網際網路層(Internetwork Layer)
+網路存取層(Network Access Layer)
+
+Microsoft 網路協定:
+應用介面層(Application Interface)
+傳輸元介面層(Transport Device Interface)
+網路驅動介面層(Network Driver Interface)
+實體網路層(Physical Network Layer)
+
+位元遮罩可以判斷兩個不同的IP是否處在相同的LAN內
+從而決定資料是否能夠直接傳輸
+LAN = Local Area Network
+
+例:
+	192.168.  0.  1
+AND)	255.255.255.  0
+-------------------------
+	192.168.  0.  0
+
+	192.168.  0.  2
+AND)	255.255.255.  0
+-------------------------
+	192.168.  0.  0
+
+因為最終得到的結果一樣
+所以兩者在相同的LAN內
+
+IP setting:
+1. DHCP
+2. Manually
+
+DHCP = dynamic host configuration protocol
+
+DHCP server會自動分配和集中管理IP網路位址
+每台電腦都需要有IP、MASK、Default Gateway、DNS server才能進行正常連線
+
+集線器 = hub, 處在第一層, security差, broadcast佳
+交換器 = switch, 處在第二層, security佳, 效能也佳
+
+某些時候, 多個網路卡會共用一個IP位址, 以便追求:
+1. performance
+2. load balance
+3. fault tolerance
